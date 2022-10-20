@@ -29,5 +29,5 @@ spec:
           mountPath: /var/lib/mysql
       volumes:
       - name: local
-        hostPath:
-          path: /meubanco/
+        persistentVolumeClaim:
+          claimName: local
